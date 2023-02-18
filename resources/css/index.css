@@ -1,0 +1,285 @@
+/* FONTS */
+@font-face {
+    font-family: "Gistesy";
+    src: url(../fonts/gistesy/Gistesy.ttf);
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+/* GLOBAL STYLES */
+
+html {
+    font-family:"Nunito";
+    font-size:16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+.container {
+    margin-top: 6rem;
+}
+
+/* FONT STYLES */
+
+h1 {
+    font-family:"Gistesy";
+    font-size: 4.5rem;
+}
+
+h2 {
+    margin-bottom: 4rem;
+}
+
+h3 {
+    font-family: "Gistesy";
+    font-size: 2.4rem;
+}
+
+/* LINKS & BUTTONS */
+.button a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* NAV BAR */
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    height: 10rem;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    top:0;
+}
+
+.logo img {
+   width: 25%;
+   margin-left: 3rem;
+}
+
+.nav ul {
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.nav li {
+    display: inline-flex;
+    padding: 0.4rem;
+}
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #63A687;
+}
+
+@media only screen and (max-width:1000px) {
+    .logo img {
+        width:8rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .nav ul {
+        display:none;
+    }
+}
+
+/* BANNER */
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+    margin-top:10rem;
+}
+
+@media only screen and (max-width:620px) {
+    .banner h1 {
+        width: 70%;
+        text-align: center;
+        display:block;
+        margin:0 auto;
+    }
+}
+
+/*
+.banner .button {
+    padding: 2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:none;
+    background-color: #C1D9CE;
+    font-size: 16px;
+}
+
+.banner .button-container {
+    display: flex;
+    justify-content: center;
+}
+*/
+
+/* PRODUCTS */
+.container h2 {
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.container-products {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.product {
+    width: 360px;
+    border: 1px solid #5b5c5a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.product img {
+    width:86%;
+    height: 270px;
+    object-fit: cover;
+}
+
+/* TEAM */
+.container-team {
+    display:flex;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team {
+    width: 45%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width:500px;
+}
+
+.team img {
+    width: 50%;
+}
+
+.team h3 {
+    font-size: 4rem;
+}
+
+.team-text {
+    text-align: center;
+    margin: 5%;
+}
+
+.team-text p {
+    margin: auto;
+    width: 80%;
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width:550px) {
+    .team {
+        flex-wrap: wrap;
+    }
+
+    .team-text p {
+        width:50%;
+    }
+}
+
+/* SHOP */
+.shop {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+}
+
+.shop img {
+    width:30%;
+    min-width:300px;
+}
+
+/* CONTACT */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #63a687;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Nunito";
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #subject,
+  #fname,
+  #email {
+    font-family: "Nunito";
+  }
+  
+  input[type=submit]:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .container-form {
+    border-radius: 5px;
+    background-color: #C1D9CE;
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f1d3a9;
+    height: 10rem;
+    margin: auto 0;
+  }
+
+  .footer span {
+    font-family: "Gistesy";
+    font-size: 3rem;
+  }

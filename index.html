@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Puce Jewelry</title>
+    <link rel="icon" href="./resources/images/logo.png">
+    <link rel="stylesheet" href="resources/css/index.css" type="text/css"/>
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./resources/images/logo.png" atl="logo">
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#products">Les produits</a></li>
+                    <li><a href="#team">L'equipe</a></li>
+                    <li><a href="#shop">La boutique</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--BANNER-->
+    <div class="banner">
+        <div class="banner-title">
+            <h1>Bienvenue chez Lily Puce</h1>
+        </div>
+        <!--
+        <div class="button-container">
+            <button class="button"><a href="#">Découvre nos créations</a></button>
+        </div>
+        -->
+    </div>
+
+    <!--PRODUCTS-->
+    <div class="container" id="products">
+        <h2>Découvrez nos créations</h2>
+
+        <div class="container-products">
+            <div class="product">
+                <h3>Collier Luna</h3>
+                <img src="resources/images/products/collier1.jpg" alt="collier">
+                <p>CHF 310.-</p>
+            </div>
+
+            <div class="product">
+                <h3>Bracelet Joy</h3>
+                <img src="resources/images/products/bracelet1.jpg" alt="bracelet">
+                <p>CHF 98.-</p>
+            </div>
+
+            <div class="product">
+                <h3>Collier Love</h3>
+                <img src="resources/images/products/collier2.jpg" alt="collier">
+                <p>CHF 290.-</p>
+            </div>
+
+            <div class="product">
+                <h3>Bague You</h3>
+                <img src="resources/images/products/bague1.jpg" alt="bague">
+                <p>CHF 120.-</p>
+            </div>
+
+            <div class="product">
+                <h3>Bague Moon</h3>
+                <img src="resources/images/products/bague4.jpg" alt="bague">
+                <p>420.-</p>
+            </div>
+
+            <div class="product">
+                <h3>Boucles d'oreilles Sun</h3>
+                <img src="resources/images/products/oreilles3.jpg" alt="boucle">
+                <p>230.-</p>
+            </div>
+
+            <div class="product">
+                <h3>Bague Miles</h3>
+                <img src="resources/images/products/bague3.jpg" alt="bague">
+                <p>290.-</p>
+            </div>
+
+            <div class="product">
+                <h3>Boucles d'oreilles Sky</h3>
+                <img src="resources/images/products/oreilles1.jpg" alt="boucle">
+                <p>230.-</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--TEAM-->
+    <div class="container" id="team">
+        <h2>Rencontrez l'équipe</h2>
+
+        <div class="container-team">
+            <div class="team">
+                <div class="team-text">
+                    <h3>Lola</h3>
+                    <p>Fondatrice de la marque mais également créatrice de renom, 
+                        Lola a créé Lily Puce en 2002 et est passionnée, depuis toujours, 
+                        par les pierres semi-précieuses</p>
+                </div>
+                <img src="./resources/images/team/lola.jpg" alt="Lola portrait">
+            </div>
+
+            <div class="team">
+                <img src="./resources/images/team/carine.jpg" alt="Carine portrait">
+                <div class="team-text">
+                    <h3>Carine</h3>
+                    <p>Diplômée de l'Ecole d'Art et de Design de Paris, 
+                        Carine est passionnée par le beau et s'épanouit 
+                        dans la création de bijoux délicat depuis de nombreuses années.</p>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="team-text">
+                    <h3>Tim</h3>
+                    <p>Photographe et Community Manager, Tim a été le premier à rejoindre 
+                        Lola après la création de Lily Puce. Grand amateur de design, il adore chiner des pièces de mobilier 
+                        et parcourir les marchés aux puces.</p>
+                </div>
+                <img src="./resources/images/team/tim.jpg" alt="Tim portrait">
+            </div>
+
+            <div class="team">
+                <img src="./resources/images/team/simon.jpg" alt="Simon portrait">
+                <div class="team-text">
+                    <h3>Simon</h3>
+                    <p>Responsable des ventes chez Lily Puce, Simon a rejoint l'équipe récemment. 
+                        Sportif amateur, il passe son temps libre à courir dans les montagnes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SHOP-->
+    <div class="container" id="shop">
+        <h2>Entrez dans la boutique</h2>
+
+        <container class="shop">
+            <img src="./resources/images/shop/stairs.jpg" alt="stairs">
+            <img src="./resources/images/shop/shop.jpg" alt="shop">
+            <img src="./resources/images/shop/coffee.jpg" alt="coffee">
+        </container>
+    </div>
+
+    <!--CONTACT-->
+    <div class="container" id="contact">
+        <h2>Contactez-nous</h2>
+
+        <div class="container-form">
+            <form action="action_page.php">
+          
+              <label for="fname">Nom & prénom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre nom">
+          
+              <label for="lname">Adresse email</label>
+              <input type="text" id="email" name="email" placeholder="Votre adresse email">
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Ecrivez ici" style="height:200px"></textarea>
+          
+              <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="container">
+        <div class="footer">
+            <p><span>Lily Puce</span><br>
+            Place Saint-François 2<br>
+            1006 Lausanne</p>
+        </div>
+    </div>
+</body>
+</html>
